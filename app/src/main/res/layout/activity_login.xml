@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.0">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp" app:srcCompat="@mipmap/logo"
+                    tools:layout_editor_absoluteY="14dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/imageView" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:scaleType="centerInside" android:background="@color/colorBlueDuoc"/>
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textPersonName"
+                    android:hint="@string/user"
+                    android:ems="10"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    tools:layout_editor_absoluteY="350dp" android:id="@+id/text_login_usuario"
+                    android:layout_gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                    android:textColorLink="@color/colorPrimary"/>
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:hint="@string/password"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_gravity="center"
+                    tools:layout_editor_absoluteY="391dp"
+                    android:id="@+id/text_login_password" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textColorLink="@color/colorPrimary"/>
+            <Button
+                    android:text="@string/txtIngresar"
+                    android:layout_gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="452dp"
+                    tools:layout_editor_absoluteX="293dp" android:id="@+id/btn_login"
+                    android:background="@color/colorBlueDuoc"
+                    android:textColor="@android:color/background_light"/>
+
+            <Button
+                    android:text="@string/password_lost"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:layout_height="wrap_content" android:id="@+id/btn_password_lost"
+                    style="@style/Widget.AppCompat.Button.Borderless" android:textColor="@color/colorBlueDuoc"/>
+            <Button
+                    android:text="@string/txtRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" android:id="@+id/btn_irRegistrar"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

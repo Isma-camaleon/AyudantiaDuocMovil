@@ -7,13 +7,54 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.0">
 
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp" app:srcCompat="@mipmap/logo"
+                    tools:layout_editor_absoluteY="14dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/imageView" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:scaleType="centerInside" android:background="@color/colorBlueDuoc"/>
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+            <TextView
+                    android:text="@string/intro"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_height="wrap_content" android:id="@+id/textView"/>
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="351dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                <Button
+                        android:text="@string/txtContinue"
+                        android:layout_gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="452dp"
+                        tools:layout_editor_absoluteX="293dp" android:id="@+id/btn_continuar"
+                        android:background="@color/colorBlueDuoc"
+                        android:textColor="@android:color/background_light"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>

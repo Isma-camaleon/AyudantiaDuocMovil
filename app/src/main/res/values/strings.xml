@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Ayudantía Duoc UC</string>
+    <string name="user">Usuario</string>
+    <string name="txtUserDuoc">Usuario Duoc</string>
+    <string name="password">Contraseña</string>
+    <string name="password_confirms">Confirmar contraseña</string>
+    <string name="password_lost">He olvidado mi contraseña</string>
+    <string name="intro">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+        rebum. Stet clita kasd gubergren, no seaest Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua, ugo consetetur Lorem Ipsum.
+    </string>
+    <string name="txtContinue">Continuar</string>
+    <string name="txtRegister">Registrarme</string>
+    <string name="txtSelectedProfile">Seleccione perfil</string>
+    <string name="txtAlumno">Alumno</string>
+    <string name="txtProfessor">Profesor</string>
+    <string name="txtLogo">Logo</string>
+    <string name="txtIngresar">Ingresar</string>
 </resources>
